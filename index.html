@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bookmarker</title>
+    <!-- google font -->
+    <link href="https://fonts.googleapis.com/css2?family=Jacquard+12&family=Pacifico&display=swap" rel="stylesheet">
+     <!-- bootstrap -->
+     <link rel="stylesheet" href="./css/bootstrap.min.css" />
+     <!-- font awesome -->
+     <link rel="stylesheet" href="./css/all.min.css" />
+    
+     <!-- css -->
+     <link rel="stylesheet" href="./css/style.css" />
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="text-center mt-5">
+                <h1>Bookmarker</h1>   
+                .....................................................................................................................................................................................................................................................................
+            </div>
+            <div class=" bookmark d-flex justify-content-center align-item-center my-4">
+                <i class="fa-solid fa-bookmark"></i>
+            <h3> Bookmark your favorite sites </h3>
+            <i class="fa-solid fa-bookmark"></i>
+            </div>
+    <div class="site-name w-100 d-flex mx-2 my-3 gap-3">
+        <i class="fa-solid fa-book-bookmark"></i>
+        <label for="siteName">Site Name</label>
+    </div>
+    <input type="text" class="form-control w-100 selectedInput" placeholder="Bookmark Name" id="siteName" >
+    <div class="alert alert-danger py-1 d-none my-2">
+        <small>site name is invalid</small>
+    </div>
+    <div class="site-name w-100 d-flex mx-2 my-3 gap-3">
+        <i class="fa-solid fa-link pe-2"></i>
+        <label for="siteUrl">Site URL</label>
+    </div>
+    <input type="text" class="form-control w-100 selectedInput" placeholder="Website URL" id="siteUrl">
+        </div>
+        <div class="alert alert-danger py-1 d-none  my-2">
+            <small>site url is invalid</small>
+        </div>
+           <div class=" text-center my-5 ">
+            <button onclick="addUrl()" type="button" class="btn btn-submit px-5 fs-5 " id="addBtn">Submit</button>
+           </div>
+    </div>
+    <!-- ===================================== -->
+    <div class="container">
+        <table class="table text-center bg-light mt-4">
+            <thead>
+                <tr>
+                    <th class="text-capitalize " id="Index">Index</th>
+                    <th class="text-capitalize" id="webName"> Website Name</th>
+                    <th class="text-capitalize" id="Visit">Visit</th>
+                    <th class="text-capitalize" id="Delete">Delete</th>
+                </tr>
+            </thead>
+            <tbody id="tablecontent">
+           
+            </tbody>
+           
+    
+    </table>
+   
+
+
+
+
+
+
+
+    <script src="./js/script.js"></script>
+    <script src="./js/bootstrap.bundle.js"></script>
+</body>
+</html>
